@@ -115,7 +115,8 @@ function webpackConfig(options: EnvOptions = {}): WebpackConfig {
 
     resolve: {
       extensions: ['.ts', '.js', '.json'],
-      // unsafeCache: true
+      // unsafeCache: true,
+      modules: [ root('node_modules') ]
     },
 
     devServer: {
