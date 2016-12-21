@@ -1,5 +1,5 @@
-# Angular 2 Seed
-> A simple Angular 2 Seed featuring Angular 2 and Webpack 2 with async routes.
+# Angular Seed
+> A simple Angular Seed featuring Angular 2 (or Angular 4) and Webpack 2 with async routes.
 
 
 ```bash
@@ -32,6 +32,8 @@ npm run server:dev:hmr
   * @types
 * Angular 2
   * Async loading
+* Angular 2
+  * Update package.json to current beta version https://github.com/angular/angular/tree/4.0.0-beta.0
 * AngularClass
   * @angularclass/form-validator
   * @angularclass/conventions-loader
