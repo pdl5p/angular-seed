@@ -12,13 +12,13 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run server:dev",
     "start:hmr": "npm run server:dev -- --env.HMR",
-    "server:dev": "webpack-dev-server --env.ENV development",
+    "server:dev": "./node_modules/.bin/webpack-dev-server --env.ENV development",
     "debug:start": "node-nightly --inspect --debug-brk node_modules/webpack-dev-server/bin/webpack-dev-server.js --env.ENV development",
     "debug:build": "node-nightly --inspect --debug-brk node_modules/webpack/bin/webpack.js --env.ENV development",
-    "predll": "rimraf dist/dll/*.*",
-    "dll": "webpack --config webpack.dll.ts --env.ENV development",
-    "prebuild": "rimraf dist/*.*",
-    "build": "webpack --env.ENV development",
+    "predll": "./node_modules/.bin/rimraf dist/dll/*.*",
+    "dll": "./node_modules/.bin/webpack --config webpack.dll.ts --env.ENV development",
+    "prebuild": "./node_modules/.bin/rimraf dist/*.*",
+    "build": "./node_modules/.bin/webpack --env.ENV development",
     "build:hmr": "npm run build -- --env.HMR"
   },
   "dependencies": {
